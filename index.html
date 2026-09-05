@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="modalUsuarios" class="modal">
+              <div class="modal-conteudo">
+                <span id="fecharModal" class="fechar">&times;</span>
+                <h2>Usuários</h2>
+                <div id="listaUsuarios">Carregando...</div>
+              </div>
+            </div>
+      <div class="centro">
+        <header>
+          <h1>Formulário</h1>
+          <hr />
+        </header>
+        <div class="content">
+          <div class="topo">
+            <h2>Nome</h2>
+            <h2>Email</h2>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+            />
+          </div>
+          <div class="mensagem">
+            <h2>Mensagem</h2>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="10"
+              placeholder="Digite sua mensagem"
+            ></textarea>
+          </div>
+
+          <div class="botoes">
+            <button id="listar" type="button">Listar</button>
+            
+            <button id="limpar" type="button">Limpar</button>
+            <button id="enviar" type="button">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

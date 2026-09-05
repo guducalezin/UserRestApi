@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: formulario
+
+  datasource:
+    url: jdbc:sqlite:database/banco.db
+    driver-class-name: org.sqlite.JDBC
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
